@@ -1,0 +1,29 @@
+{
+  "name": "jsDataStructures",
+  "author": "Samyak Singh",
+  "version": "1.0.0",
+  "description": "Simple DS implementations in JS using es6.",
+  "scripts": {
+    "transpile": "babel src -d dist",
+    "build-linked-list": "babel src -d dist && clear && node dist/LinkedList.js",
+    "build": "npm run build-linked-list",
+    "test": "jest"
+  },
+  "jest": {
+    "collectCoverage": true,
+    "coverageThreshold": {
+      "branches": 100,
+      "functions": 100,
+      "lines": 100,
+      "statements": 100
+    },
+    "verbose": true
+  },
+  "license": "ISC",
+  "dependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-preset-env": "^1.6.0",
+    "jest": "^21.2.1"
+  }
+}
